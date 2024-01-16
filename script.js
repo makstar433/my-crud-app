@@ -1,5 +1,3 @@
-// script.js
-
 const form = document.getElementById('itemForm');
 const itemList = document.getElementById('itemList');
 const getAllItemsButton = document.getElementById('getAllItems');

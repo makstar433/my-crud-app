@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: frontend-configmap
-data:
-  PORT: "4000"
-  MONGODB_URI: "mongodb://localhost:27017/"

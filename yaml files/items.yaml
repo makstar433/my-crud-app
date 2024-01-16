@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: items
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: items
+  template:
+    metadata:
+      labels:
+        app: items
+    spec:
+      containers:
+        - name: items
+          image: notwld/express-mvc:latest
+          ports:
+            - containerPort: 4000
+          env:
+            - name: PORT
+              value: "4000"
+            - name: MONGODB_URI
+              value: "mongodb://localhost:27017/"
