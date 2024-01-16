@@ -13,7 +13,7 @@ RUN npm install
 # Copy all files from current directory to container
 COPY . .
 
-# Expose port 3000 for the app
+# Expose port 4000 for the app
 EXPOSE 4000
 
  # Start the app when container starts
